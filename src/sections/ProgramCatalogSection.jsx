@@ -1,6 +1,7 @@
 'use client';
 import React, { useState, useEffect } from 'react';
 import { ProgramCard } from '@/components/composite/ProgramCard';
+import { Button } from '@/components/ui/Button';
 import { PROGRAM_CATEGORIES } from '@/constants/programs.constants';
 import { fetchPrograms } from '@/services/programs.service';
 
@@ -90,6 +91,21 @@ export function ProgramCatalogSection({ onEnquire }) {
             >
               Try Reloading Catalog
             </button>
+          </div>
+        ) : programs.length === 0 ? (
+          <div className="p-12 text-center bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl max-w-md mx-auto space-y-4 shadow-sm">
+            <div className="w-12 h-12 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-400 mx-auto flex items-center justify-center">
+              <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+              </svg>
+            </div>
+            <h3 className="text-lg font-bold text-slate-900 dark:text-white">No Programs Found</h3>
+            <p className="text-xs text-slate-500 dark:text-slate-400">
+              There are currently no programs listed in the &ldquo;{selectedCategory}&rdquo; domain.
+            </p>
+            <Button variant="outline" size="sm" onClick={() => setSelectedCategory('All Programs')}>
+              Reset Category Filter
+            </Button>
           </div>
         ) : (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

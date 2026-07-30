@@ -1,41 +1,40 @@
 export const NAV_LINKS = [
-  { label: 'Refer & Earn', href: '#refer' },
   { label: 'Programs', href: '#programs' },
-  { label: 'Why Accredian', href: '#comparison' },
+  { label: 'Refer & Earn', href: '#refer' },
+  { label: 'Comparison', href: '#comparison' },
   { label: 'Methodology', href: '#methodology' },
-  { label: 'Benefits', href: '#metrics' },
+  { label: 'Impact', href: '#metrics' },
+  { label: 'Testimonials', href: '#testimonials' },
   { label: 'FAQs', href: '#faq' },
+  { label: 'Enquire', href: '#enquire' },
 ];
 
 export const FOOTER_SECTIONS = [
   {
-    title: 'Enterprise Programs',
+    title: 'Programs',
     links: [
-      { label: 'Gen-AI Mastery for Executives', href: '#programs' },
-      { label: 'Product & Digital Innovation', href: '#programs' },
-      { label: 'Tech & Data Insights Leadership', href: '#programs' },
-      { label: 'Fintech & Enterprise Transformation', href: '#programs' },
-      { label: 'Strategic Leadership Elevation', href: '#programs' },
+      { label: 'Gen-AI Executive Cohort', href: '#programs' },
+      { label: 'Global Product Management', href: '#programs' },
+      { label: 'Data Engineering & MLOps', href: '#programs' },
+      { label: 'Digital Leadership Elevation', href: '#programs' },
     ],
   },
   {
-    title: 'Referral & Engagement',
+    title: 'Company',
     links: [
-      { label: 'Refer & Earn Rewards', href: '#refer' },
-      { label: 'Referral Program Terms', href: '#faq' },
-      { label: 'Corporate Partner Network', href: '#partners' },
-      { label: 'Enterprise Case Studies', href: '#testimonials' },
-    ],
-  },
-  {
-    title: 'Company & Resources',
-    links: [
-      { label: 'About Accredian', href: '#' },
-      { label: 'Career Outcomes', href: '#' },
-      { label: 'Enterprise Blog', href: '#' },
+      { label: 'About Accredian', href: 'https://accredian.com/about' },
+      { label: 'Careers', href: 'https://accredian.com/careers' },
+      { label: 'Enterprise Blog', href: 'https://accredian.com/blog' },
       { label: 'Contact Us', href: '#enquire' },
-      { label: 'Privacy Policy', href: '#' },
-      { label: 'Terms of Service', href: '#' },
+    ],
+  },
+  {
+    title: 'Resources & Legal',
+    links: [
+      { label: 'Privacy Policy', href: 'https://accredian.com/privacy' },
+      { label: 'Terms of Service', href: 'https://accredian.com/terms' },
+      { label: 'Security & Compliance', href: 'https://accredian.com/security' },
+      { label: 'Referral Terms', href: '#refer' },
     ],
   },
 ];
